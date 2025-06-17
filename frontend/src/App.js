@@ -38,7 +38,7 @@ function App() {
     formData.append('image', report.image);
 
     try {
-      await axios.post('http://localhost:5000/api/reports', formData);
+      await axios.post('http://18.136.202.173:4000/api/reports', formData);
       toast.success('✅ Laporan berhasil dikirim');
 
       setReport({
